@@ -16,16 +16,14 @@ export default async function DashboardPage() {
   const defaultCollapsed = collapsed ? JSON.parse(collapsed.value) : undefined;
 
   return (
-    <>
-      <div className="flex flex-col">
-        <Dashboard
-          accounts={accounts}
-          mails={mails}
-          defaultLayout={defaultLayout}
-          defaultCollapsed={defaultCollapsed}
-          navCollapsedSize={4}
-        />
-      </div>
-    </>
+    <div className="flex flex-col">
+      <Dashboard
+        accounts={accounts}
+        mails={mails}
+        defaultLayout={defaultLayout}
+        defaultCollapsed={defaultCollapsed}
+        navCollapsedSize={4}
+      />
+    </div>
   );
 }
